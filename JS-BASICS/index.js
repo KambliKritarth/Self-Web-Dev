@@ -87,3 +87,44 @@ function greet() {
 }
 
 greet();
+
+//alert("click ok to load page");
+
+
+//Bootcamp JavaScript Essentials
+var sentence = `${firstName} is ${age} years old and approval is ${isApproved}`;
+console.log(sentence);
+
+
+// Console tricks
+console.error("This is an error")
+console.warn("This is a warning")
+console.info("This is an info")
+
+
+let obj1 = {
+  fname: 'Kritarth',
+  age: 21,
+  city: 'Kalyan',
+  isAdult: true
+}
+let obj2 = {
+  fname: 'Arpith',
+  age: 19,
+  city: 'Bangalore',
+  isAdult: true
+}
+let obj3 = {
+  fname: 'Ishan',
+  age: 17,
+  city: 'P-town',
+  isAdult: false
+}
+
+console.log(obj1, obj2, obj3)
+console.table([obj1, obj2, obj3])
+
+console.log("%c I am a boring text", "color:red;background-color: yellow");
+
+let css = "text-align: center;font-size: 65px;border-radius:15px;background-color:white;color:magenta"
+console.log("%c I am an interestin text", css);
