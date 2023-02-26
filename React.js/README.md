@@ -6,6 +6,7 @@
 ![image](https://user-images.githubusercontent.com/74850840/221387076-4fbb629f-9519-40ef-94e2-af6117a6cae9.png)
 
 2. Creating a React Component
+
 ![image](https://user-images.githubusercontent.com/74850840/221390778-9bdf4593-4793-4623-a1d5-a0ad77ed7421.png)
 
 
