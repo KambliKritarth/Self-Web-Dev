@@ -2,6 +2,9 @@
 
 ## Creating a React App
 1. Created React app using Vite
+![image](https://user-images.githubusercontent.com/74850840/221387059-6e3db41a-2b68-4c20-b68f-801817bee430.png)
+![image](https://user-images.githubusercontent.com/74850840/221387076-4fbb629f-9519-40ef-94e2-af6117a6cae9.png)
+
 
 ## Components
 ![image](https://user-images.githubusercontent.com/74850840/221386953-d41048fd-26c4-4308-83a4-0eafa3af9619.png)
