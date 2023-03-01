@@ -128,3 +128,30 @@ console.log("%c I am a boring text", "color:red;background-color: yellow");
 
 let css = "text-align: center;font-size: 65px;border-radius:15px;background-color:white;color:magenta"
 console.log("%c I am an interestin text", css);
+
+
+/* 
+// inputs
+
+console.log("Taking Input from user");
+//Alert
+// alert("I am a simple alert!");
+
+//Prompt
+//syntax:- prompt("title","default value" [optional])
+// returns value or null
+
+
+// Convert to number
+// let age = Number(prompt("Enter your age",21));
+let age1 = prompt("Enter your age", 21);
+console.log(age1, typeof age1);
+
+
+//Confirm
+// Return true or false
+// OK -> true
+// Cancel -> false
+let val = confirm("Do you want to exit the page?");
+console.log(val);
+*/
