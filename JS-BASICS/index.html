@@ -13,10 +13,25 @@
   </h1>
   </div>
   
-  <div class = "container">  
-  <p id = "magic">Magic man do the magic can</p>
+  <div class = "container" id = "container">  
+  <p id = "magic">Magic man does what the magic can</p>
   <p id = "water">water man fills the water can</p>
   </div>
+  
+  <div id="card">
+    <h4 id="cardHeading">
+      Full Stack
+    </h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo asperiores at a rem, nulla facere iure temporibus! Nemo maxime, nostrum, debitis rerum libero iste asperiores voluptatibus in dolorem quia omnis?</p>
+    <button id = "join">Join</button>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste maiores qui minima ex obcaecati natus alias, animi et debitis fuga vel, deserunt magni quaerat suscipit, provident fugit sit? Aperiam.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi voluptates qui, libero earum commodi nesciunt neque quisquam quam animi temporibus, vitae enim, iste eius tenetur molestiae. At, odio accusamus?</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus alias laboriosam dignissimos voluptatem, debitis quam similique magni provident officia, eius perferendis, repellendus accusamus rerum at aliquid nulla reiciendis. Minima, quaerat!</p>
+
+  <button class="button" id="change">Reverse</button>
+  <br></br>
+  <input id = "size" type="number"></input><button class="button" id="modify">Modify</button>
 
   <script src = "index.js">
   </script>
@@ -28,5 +43,69 @@
   </script>
   <script src = "docs.js">
   </script>
+  <script src = "domManipulate.js">
+  </script>
+  <script src = "script.js">
+  </script>
+  <style>
+    body{
+      padding: 40px;
+    }
+    .container{
+      color:blue;
+    }
+    #card{
+       background-color: #0081B4;
+      color: #FAD3E7;
+      width: 300px;
+      border: 1px solid #FAD3E7;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    #cardHeading{
+      font-size: 2rem;
+      color: #FAD3E7;
+    }
+    #join{
+      background-color: #FAD3E7;
+      color: #0081B4;
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 5px;
+      font-weight: 900;
+    }
+    #join:hover{
+      background-color: #0081B4;
+      color: #FAD3E7;
+      border-radius: 10px;
+      border: 2px solid #FAD3E7;
+      padding: 5px;
+      font-weight: 900;
+    }
+    #change{
+      background-color: #FAD3E7;
+      color: #0081B4;
+      max-width: 65px;
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 5px;
+      font-weight: 900;
+    }
+    input{
+      padding: 5px;
+      border: 2px solid rgb(8, 138, 244);
+      border-radius: 5px;
+    }
+    #modify{
+      background-color: #FAD3E7;
+      color: #0081B4;
+      max-width: 65px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 1px solid black;
+      padding: 5px;
+      font-weight: 900;
+    }
+  </style>
 </body>
 </html>
