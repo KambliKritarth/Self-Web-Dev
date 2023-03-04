@@ -1,0 +1,90 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+   background-color: #0F0F0F;
+  }
+  .line{
+   width: 17.5px;
+   height: 1px;
+   background-color: white;
+   margin: 5px 0;
+  }
+  #menu{
+   float: left;
+   max-width: 20px;
+   margin: 10px;
+  }
+  #logo{
+    float: left;
+    margin-top: -2px;
+    padding-top: 7px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 120px;
+  }
+  .example {
+    position: relative;
+    display: inline-block;
+  }
+  .search{
+    margin: 0 auto;
+  }
+  #search{
+    background-color: #0F0F0F;
+    height: 40px;
+    width: 700px;
+    border-radius: 30px;
+    border: 0.1px solid #222222;
+    margin-left:auto;
+    color: white;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #searchButton{
+    color: white;
+    background-color: #222222;
+    border: 0.1px solid #222222;
+    height: 40px;
+    width: 50px;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div id = "menu">
+      <div class = "line"></div>
+      <div class = "line"></div>
+      <div class = "line"></div>
+    </div>
+    <div class="img" id="logo">
+      <img src="youTube.jpg" alt="Videoplayer logo" ></img>
+    </div>
+    <div class="search" id = "ytSearchBar">
+      <form class="example" action="action_page.php">
+        <input type="text" id ="search" placeholder="Search.." name="search"></input>
+        <button type="submit" id="searchButton"><i class="fa fa-search">
+        <svg>
+          <path d = "M20.87,20.17l-5.59-5.59C16.35,13.35,17,11.75,17,10c0-3.87-3.13-7-7-7s-7,3.13-7,7s3.13,7,7,7c1.75,0,3.35-0.65,4.58-1.71 l5.59,5.59L20.87,20.17z M10,16c-3.31,0-6-2.69-6-6s2.69-6,6-6s6,2.69,6,6S13.31,16,10,16z"></path>
+        </svg>
+      </i></button>
+      </form>
+    </div>
+    
+  </nav>
+  <div class="sidebar">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+</body>
+</html>
