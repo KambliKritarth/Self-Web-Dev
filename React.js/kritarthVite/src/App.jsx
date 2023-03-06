@@ -19,6 +19,9 @@ function App() {
   }]
   const now = new Date().toString()
   sayHello()
+  const reviewsComponents = reviews.map(review => (
+    <Review key={ review.album } album={ review.album} review={review.review} rating={ review.rating} />
+  ))
   return (
     <>
     <div className="App">
@@ -28,9 +31,12 @@ function App() {
       <p>{"There can be only one root component in App()"}</p>
       </div>
       <RandomImage />
-      <Review album={"The Bends"} review={"sad, solid listen, mesmerizing"} rating = {4} />
-      <Review album={"OK Computer"} review={"depressing, great listen, interesting"} rating={4.5} /> 
-      {reviews.map((review, index) => { return <Review key={index} album = {review.album} review={review.review} rating={review.rating} /> })} 
+      
+      <Review album={"The Bends"} review={"sad, solid listen, mesmerizing"}     rating = {4} />
+      <Review album={"OK Computer"} review={"depressing, great listen, pristine"} rating={4.5} /> 
+      {reviews.map((review, index) => { return <Review key={index} album={review.album} review={review.review} rating={review.rating} /> })}
+      <h2>Favorites</h2>
+      {reviews.filter(review=>review.rating>4).map((review, index) => { return <Review key={index} album={review.album} review={review.review} rating={review.rating} /> })} 
     </>
   )
 }
