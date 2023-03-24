@@ -1,4 +1,4 @@
-import { useState} from 'React'
+import { useState} from 'react'
 
 export default function Album({ id, text, favorites, onFavorite, onDelete, likes, onLike, onDislike }) {
   

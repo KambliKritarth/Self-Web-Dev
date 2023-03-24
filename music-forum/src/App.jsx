@@ -1,23 +1,22 @@
+import React from "react"; 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Album from './Albums'
 import AlbumForm from './AlbumForm'
 
-
 function App() {
-
-  const [favorites, setFavorite] = useState(1)
+  const [favorite, setFavorite] = useState(1)
   const [albums, setAlbums] = useState([
     {
       id: 1,
       text: "The Bends",
-      likes:0
+      likes: 0
     },
     {
-      id: 2,
-      text: "OK Computer",
-      likes:0
+      id: 2, 
+      text: "Ok Computer",
+      likes: 0
     }
   ])
   
@@ -25,43 +24,45 @@ function App() {
     setFavorite(id)
   }
 
-  const handleNewAlbum = (text) => {
+    const handleNewAlbum = (text) => {
     const album = {
       text,
       id: self.crypto.randomUUID(),
-      likes:0
+      likes: 0
     }
-    setAlbums([...albums,album])
-    console.log("new album: ",text)
+    setAlbums([album, ...albums])
+    console.log("New Album:", text)
   }
+
   const handleDeleteAlbum = (id) => {
-    setAlbums(albums.filter(album => id!==album.id))
-    console.log("new album: ",text)
+    setAlbums(albums.filter(album => album.id !== id))
+    console.log("delete album", id)
   }
+
   const handleLike = (id) => {
     setAlbums(albums.map(album => {
       if (album.id === id) {
-        return {...album,likes:album.likes+1}
+        return {...album, likes: album.likes + 1}
       } else {
         return album
       }
     }))
-    console.log("handleLike",text)
   }
+
   const handleDislike = (id) => {
     setAlbums(albums.map(album => {
       if (album.id === id) {
-        return {...album,likes:album.likes-1}
+        return {...album, likes: album.likes - 1}
       } else {
         return album
       }
     }))
-    console.log("handleDislike",text)
   }
 
   const handleSort = () => {
-    setAlbums([...albums].sort((a,b) => b.likes -a.likes))
+    setAlbums([...albums].sort((a, b) => b.likes - a.likes))
   }
+
   return (
     <div className="App">
       <h1>Albums</h1>
@@ -73,11 +74,11 @@ function App() {
           <Album onDelete={handleDeleteAlbum} onFavorite={handleFavorite}
             onLike={handleLike}
             onDislike={handleDislike}
-            favorites={favorites === album.id}
+            favorites={favorite === album.id}
             key={album.id}
             {...album}>
             
-            </Album>
+          </Album>
         ))}
       
     </div>

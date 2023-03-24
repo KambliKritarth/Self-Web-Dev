@@ -4,9 +4,8 @@ import Album from './Album'
 import {useState} from 'react'
 
 function App() {
-  const [favorite, setFavorite] = useState(1)
-
-  const albums = [
+  
+  const [albums, setAlbums] = useState([
     {
       id: 1,
       text: "The Bends"
@@ -15,7 +14,7 @@ function App() {
       id: 2,
       text:"OK Computer"
     }
-  ]
+  ])
 
   const handleFavorite = (id) => {
     setFavorite(id)
