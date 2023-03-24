@@ -1,0 +1,22 @@
+.logo{
+	opacity: 0;
+	transition: opacity 230ms;	
+}
+.logo:hover{
+	opacity: 1;
+}
+@keyframes mySpinner{
+	from{
+		transform: rotate(0deg);
+    	}
+	25%{
+		transform: rotate(-45deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.spinner{
+	animation: mySpinner 4s;
+	animation-iteration-count: infinite;
+}
